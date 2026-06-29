@@ -1,0 +1,32 @@
+name: AI Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  claude-review:
+    name: Claude Code Review
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Claude PR Review
+        uses: anthropics/claude-code-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # 只在明確請求時才 auto-review（避免每個 PR 都觸發費用）
+          trigger_phrase: '/claude-review'
+          # 或設為 true 讓每個 PR 都自動 review：
+          # direct_prompt: |
+          #   請 review 這個 PR，專注在：
+          #   1. 安全漏洞（XSS、SQL injection、未驗證輸入）
+          #   2. 商業邏輯是否正確
+          #   3. 效能問題（N+1 query、未分頁）
+          #   4. 有沒有違反 SHARED_RULES.md 的規則

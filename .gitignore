@@ -1,0 +1,22 @@
+# 環境變數（絕對不 commit）
+.env
+.env.local
+.env.*.local
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Build output（依專案決定是否 commit）
+# build/
+# dist/
+# .next/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/settings.json
+*.swp

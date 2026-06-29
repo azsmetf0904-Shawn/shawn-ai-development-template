@@ -1,0 +1,24 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignorePaths": [
+    "node_modules",
+    ".git",
+    "build",
+    "dist"
+  ],
+  "ignoreWords": [
+    "Supabase", "Vercel", "Zeabur", "n8n",
+    "Claude", "Codex", "Cursor",
+    "CLAUDE", "AGENTS", "SIS", "ADR",
+    "PostgreSQL", "TypeScript", "JavaScript",
+    "Shawn", "TASKS", "CHANGELOG",
+    "frontend", "backend", "webhook", "webhooks",
+    "middleware", "API", "APIs", "SDK",
+    "auth", "repo", "repos",
+    "TODO", "FIXME",
+    "hardcode", "hardcoded",
+    "supabase", "vercel"
+  ],
+  "words": []
+}
