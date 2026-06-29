@@ -1,20 +1,5 @@
 # workflow.md — 工作模式
 
-## AI 團隊分工（已確立，2026-06-29）
-
-**[Fact]** 這是當前確立的分工模型：
-
-| 角色 | 負責 |
-|------|------|
-| **Shawn** | 方向、商業判斷、最終決策 |
-| **Claude** | 架構、規劃、需求拆解、審查、文件 |
-| **Codex** | 寫程式、修 Bug、補測試、重構 |
-| **GitHub** | 版本管理、CI/CD、歷史紀錄 |
-| **n8n** | 自動化流程、LINE 推播、排程 |
-| **SIS / Shawn Core** | 記憶、決策標準、人格一致性 |
-
-**[Inference]** 我把自己定位成 CEO，Claude 是 Chief of Staff，Codex 是 Senior Engineer。
-
 ## 開發流程（標準）
 
 **[Fact]** 我偏好的開發流程順序：

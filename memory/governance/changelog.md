@@ -7,6 +7,21 @@
 
 ---
 
+## v0.1.1 — 2026-06-29（四層架構重組）
+
+### 修正
+
+- `memory/`：重組為 `governance/`、`identity/`、`decision/`、`execution/`、`knowledge/` 五個分類目錄。
+- `governance/constitution.md`：新增治理憲法，集中 Shawn Rule No.1、Build > Perfect、商業邏輯優先、AI 協作政策、AI 不應該做的事、AI 團隊分工。
+- `identity/values.md`：只保留個人時間與精力價值觀；工作政策與 AI 協作政策移到 `governance/constitution.md`。
+- `decision/decision.md`：保留決策框架；「AI 不應該做的事」移到 `governance/constitution.md`。
+- `execution/workflow.md`：保留 SOP 流程；AI Team 工具說明移到 `governance/constitution.md`。
+- `governance/review_protocol.md`：新增 Sprint 後 AI 審查清單。
+- `governance/changelog.md`：移入 governance，作為 Review Protocol 的一部分。
+- `README.md`：更新 AI 使用方式與新目錄結構。
+
+---
+
 ## v0.1.0 — 2026-06-29（初版）
 
 ### 建立
